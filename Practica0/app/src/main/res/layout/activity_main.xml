@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#bc3361">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:background="#13322b">
+
+            <ImageView
+                android:id="@+id/ivIPN"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/ipn_logo" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Unidad Profesional Interdisciplinaria en Ingenieria y Tecnologias Avanzadas"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"/>
+
+            <ImageView
+                android:id="@+id/ivUPIITA"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="centerCrop"
+                android:gravity="center"
+                app:srcCompat="@drawable/upiita_logo" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:text="Alumno:"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#FEFEFE"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Daniel González Jiménez"
+            android:textSize="24sp"
+            android:layout_marginBottom="8dp"
+            android:textColor="#FEFEFE"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Unidad de Aprendizaje:"
+            android:textSize="24sp"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:textColor="#FEFEFE"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Programación de Dispositivos Móviles"
+            android:textSize="24sp"
+            android:layout_marginBottom="8dp"
+            android:textColor="#FEFEFE"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Grupo:"
+            android:textSize="24sp"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:textColor="#FEFEFE"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="2TM13"
+            android:textSize="24sp"
+            android:layout_marginBottom="8dp"
+            android:textColor="#FEFEFE"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Profesor:"
+            android:textSize="24sp"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:textColor="#FEFEFE"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="José Alfredo Bermudez Sosa"
+            android:textSize="24sp"
+            android:layout_marginBottom="8dp"
+            android:textColor="#FEFEFE"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:background="#333">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INSTITUTO POLITÉCNICO NACIONAL"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Avenida Instituto Politécnico Nacional No. 2580, Col Barrio la Laguna Ticomán, Gustavo A. Madero, Ciudad de México, C.P. 07340. Teléfono: 57296000, extensión 56806"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
