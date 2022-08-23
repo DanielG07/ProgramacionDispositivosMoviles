@@ -1,4 +1,4 @@
-package com.example.practica0
+package com.danielgj7.practica0
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

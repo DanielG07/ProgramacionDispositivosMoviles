@@ -7,7 +7,7 @@ android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.example.practica0"
+        applicationId "com.danielgj7.practica0"
         minSdk 28
         targetSdk 32
         versionCode 1
