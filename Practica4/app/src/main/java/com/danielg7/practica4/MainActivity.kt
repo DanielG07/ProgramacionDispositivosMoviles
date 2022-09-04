@@ -77,90 +77,85 @@ class MainActivity : AppCompatActivity() {
         )
         paramsTexto.gravity = Gravity.CENTER
 
-        val tvAlumnoT = TextView(this)
-        tvAlumnoT.layoutParams = params
-        tvAlumnoT.text =
-            "Alumno:"
-        tvAlumnoT.textSize = 24F
-        tvAlumnoT.setTypeface(null, Typeface.BOLD)
-        tvAlumnoT.setTextColor(Color.parseColor("#13322b"))
-        tvAlumnoT.textAlignment = View.TEXT_ALIGNMENT_CENTER
 
-        val tvAlumno = TextView(this)
-        tvAlumno.layoutParams = paramsTexto
-        tvAlumno.text =
-            "Daniel González Jiménez"
-        tvAlumno.textSize = 24F
-        tvAlumno.setTextColor(Color.parseColor("#5F5F5F"))
-        tvAlumno.textAlignment = View.TEXT_ALIGNMENT_CENTER
+        val tvAlumnoT = TextViewBodyFactory(
+            this,
+            params,
+            "Alumno",
+            24F,
+            "#13322b"
+        )
+        val tvAlumno = TextViewBodyFactory(
+            this,
+            paramsTexto,
+            "Daniel González Jiménez",
+            24F,
+            "#5F5F5F"
+        )
 
-        val tvUnidadT = TextView(this)
-        tvUnidadT.layoutParams = params
-        tvUnidadT.text =
-            "Unidad de Aprendizaje:"
-        tvUnidadT.textSize = 24F
-        tvUnidadT.setTypeface(null, Typeface.BOLD)
-        tvUnidadT.setTextColor(Color.parseColor("#13322b"))
-        tvUnidadT.textAlignment = View.TEXT_ALIGNMENT_CENTER
+        val tvUnidadT = TextViewBodyFactory(
+            this,
+            params,
+            "Unidad de Aprendizaje:",
+            24F,
+            "#13322b"
+        )
+        val tvUnidad = TextViewBodyFactory(
+            this,
+            paramsTexto,
+            "Programación de Dispositivos Móviles",
+            24F,
+            "#5F5F5F"
+        )
 
-        val tvUnidad = TextView(this)
-        tvUnidad.layoutParams = paramsTexto
-        tvUnidad.text =
-            "Programación de Dispositivos Móviles"
-        tvUnidad.textSize = 24F
-        tvUnidad.setTextColor(Color.parseColor("#5F5F5F"))
-        tvUnidad.textAlignment = View.TEXT_ALIGNMENT_CENTER
 
-        val tvGrupoT = TextView(this)
-        tvGrupoT.layoutParams = params
-        tvGrupoT.text =
-            "Grupo:"
-        tvGrupoT.textSize = 24F
-        tvGrupoT.setTypeface(null, Typeface.BOLD)
-        tvGrupoT.setTextColor(Color.parseColor("#13322b"))
-        tvGrupoT.textAlignment = View.TEXT_ALIGNMENT_CENTER
+        val tvGrupoT = TextViewBodyFactory(
+            this,
+            params,
+            "Grupo:",
+            24F,
+            "#13322b"
+        )
 
-        val tvGrupo = TextView(this)
-        tvGrupo.layoutParams = paramsTexto
-        tvGrupo.text =
-            "2TM13"
-        tvGrupo.textSize = 24F
-        tvGrupo.setTextColor(Color.parseColor("#5F5F5F"))
-        tvGrupo.textAlignment = View.TEXT_ALIGNMENT_CENTER
+        val tvGrupo = TextViewBodyFactory(
+            this,
+            paramsTexto,
+            "2TM13",
+            24F,
+            "#5F5F5F"
+        )
 
-        val tvProfesorT = TextView(this)
-        tvProfesorT.layoutParams = params
-        tvProfesorT.text =
-            "Profesor:"
-        tvProfesorT.textSize = 24F
-        tvProfesorT.setTypeface(null, Typeface.BOLD)
-        tvProfesorT.setTextColor(Color.parseColor("#13322b"))
-        tvProfesorT.textAlignment = View.TEXT_ALIGNMENT_CENTER
+        val tvProfesorT = TextViewBodyFactory(
+            this,
+            params,
+            "Profesor:",
+            24F,
+            "#13322b"
+        )
 
-        val tvProfesor = TextView(this)
-        tvProfesor.layoutParams = paramsTexto
-        tvProfesor.text =
-            "José Alfredo Bermudez Sosa"
-        tvProfesor.textSize = 24F
-        tvProfesor.setTextColor(Color.parseColor("#5F5F5F"))
-        tvProfesor.textAlignment = View.TEXT_ALIGNMENT_CENTER
+        val tvProfesor = TextViewBodyFactory(
+            this,
+            paramsTexto,
+            "José Alfredo Bermudez Sosa",
+            24F,
+            "#5F5F5F"
+        )
 
-        val tvBoletaT = TextView(this)
-        tvBoletaT.layoutParams = params
-        tvBoletaT.text =
-            "Boleta:"
-        tvBoletaT.textSize = 24F
-        tvBoletaT.setTypeface(null, Typeface.BOLD)
-        tvBoletaT.setTextColor(Color.parseColor("#13322b"))
-        tvBoletaT.textAlignment = View.TEXT_ALIGNMENT_CENTER
+        val tvBoletaT = TextViewBodyFactory(
+            this,
+            params,
+            "Boleta:",
+            24F,
+            "#13322b"
+        )
 
-        val tvBoleta = TextView(this)
-        tvBoleta.layoutParams = paramsTexto
-        tvBoleta.text =
-            "2019640295"
-        tvBoleta.textSize = 24F
-        tvBoleta.setTextColor(Color.parseColor("#5F5F5F"))
-        tvBoleta.textAlignment = View.TEXT_ALIGNMENT_CENTER
+        val tvBoleta = TextViewBodyFactory(
+            this,
+            paramsTexto,
+            "2019640295",
+            24F,
+            "#5F5F5F"
+        )
 
         val llBottom = LinearLayout(this)
         llBottom.layoutParams = LinearLayout.LayoutParams(
@@ -171,26 +166,21 @@ class MainActivity : AppCompatActivity() {
         llBottom.setPadding(this.dpToPx(8))
         llBottom.setBackgroundColor(Color.parseColor("#333333"))
 
-        val tvIPN = TextView(this)
-        tvIPN.layoutParams = LinearLayout.LayoutParams(
-            LinearLayout.LayoutParams.MATCH_PARENT,
-            LinearLayout.LayoutParams.WRAP_CONTENT
+        val tvIPN = TextViewBodyFactory(
+            this,
+            paramsTexto,
+            "INSTITUTO POLITÉCNICO NACIONAL",
+            14F,
+            "#FFFFFF"
         )
-        tvIPN.text = "INSTITUTO POLITÉCNICO NACIONAL"
-        tvIPN.textSize = 14F
-        tvIPN.setTextColor(Color.parseColor("#FFFFFF"))
-        tvIPN.gravity = Gravity.CENTER
 
-        val tvDireccion = TextView(this)
-        tvDireccion.layoutParams = LinearLayout.LayoutParams(
-            LinearLayout.LayoutParams.MATCH_PARENT,
-            LinearLayout.LayoutParams.WRAP_CONTENT
+        val tvDireccion = TextViewBodyFactory(
+            this,
+            paramsTexto,
+            "Avenida Instituto Politécnico Nacional No. 2580, Col Barrio la Laguna Ticomán, Gustavo A. Madero, Ciudad de México, C.P. 07340. Teléfono: 57296000, extensión 56806",
+            14F,
+            "#FFFFFF"
         )
-        tvDireccion.text =
-            "Avenida Instituto Politécnico Nacional No. 2580, Col Barrio la Laguna Ticomán, Gustavo A. Madero, Ciudad de México, C.P. 07340. Teléfono: 57296000, extensión 56806"
-        tvDireccion.textSize = 14F
-        tvDireccion.setTextColor(Color.parseColor("#FFFFFF"))
-        tvDireccion.gravity = Gravity.CENTER
 
         llBottom.addView(tvIPN)
         llBottom.addView(tvDireccion)
@@ -209,6 +199,23 @@ class MainActivity : AppCompatActivity() {
         llMain.addView(llBody)
         llMain.addView(llBottom)
     }
+}
+
+fun TextViewBodyFactory(
+    context: Context,
+    params: LinearLayout.LayoutParams,
+    text: String,
+    textSize: Float,
+    textColor: String
+): TextView {
+    val tv = TextView(context)
+    tv.layoutParams = params
+    tv.text = text
+    tv.textSize = textSize
+    tv.setTextColor(Color.parseColor(textColor))
+    tv.textAlignment = View.TEXT_ALIGNMENT_CENTER
+
+    return tv
 }
 
 fun Context.dpToPx(dp: Int): Int {
