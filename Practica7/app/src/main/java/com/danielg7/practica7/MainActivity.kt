@@ -96,6 +96,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onStop() {
         super.onStop()
         Toast.makeText(this, "onStop", Toast.LENGTH_SHORT).show()
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Toast.makeText(this, "onDestroy", Toast.LENGTH_SHORT).show()
 
         val chBoxBorrar = findViewById<CheckBox>(R.id.chBoxBorrar)
         if (chBoxBorrar.isActivated) {
@@ -105,11 +110,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 apply()
             }
         }
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        Toast.makeText(this, "onDestroy", Toast.LENGTH_SHORT).show()
     }
 
     override fun onRestart() {
