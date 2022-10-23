@@ -1,9 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Convertidor">
+    android:orientation="vertical"
+    tools:context=".Convertidor"
+    android:padding="16dp"
+    android:gravity="center">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/convertidor_title"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:layout_marginBottom="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingEnd="8dp">
+
+            <TextView
+                android:id="@+id/tvCF"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/grados_celsius_c_title"
+                android:textColor="@color/black"
+                android:textSize="21sp"
+                android:textAlignment="center"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/edtCF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="21sp"
+                android:textAlignment="center"
+                android:layout_marginBottom="8dp"
+                android:inputType="numberDecimal"/>
+
+            <Button
+                android:id="@+id/btnCF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/c_f_label"
+                android:textSize="21sp"
+                android:textAlignment="center"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tvCFResultado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="21sp"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingStart="8dp">
+
+            <TextView
+                android:id="@+id/tvFC"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/grados_fahrenheit_f_title"
+                android:textColor="@color/black"
+                android:textSize="21sp"
+                android:textAlignment="center"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/edtFC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="21sp"
+                android:textAlignment="center"
+                android:layout_marginBottom="8dp"
+                android:inputType="numberDecimal"/>
+
+            <Button
+                android:id="@+id/btnFC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/f_c_label"
+                android:textSize="21sp"
+                android:textAlignment="center"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tvFCResultado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="21sp"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLimpiar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clean_results"
+        android:textSize="21sp"
+        android:textAlignment="center"/>
+
+
+
+</LinearLayout>

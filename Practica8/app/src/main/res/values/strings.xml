@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">Practica 8</string>
     <string name="borrar"><![CDATA[<-]]></string>
+    <string name="convertidor_title">Convertidor de grados Celsius a Fahrenheit</string>
+    <string name="grados_celsius_c_title">Grados Celsius (°C):</string>
+    <string name="c_f_label"><![CDATA[°C -> °F]]></string>
+    <string name="grados_fahrenheit_f_title">Grados Fahrenheit (°F):</string>
+    <string name="f_c_label"><![CDATA[°F -> °C]]></string>
+    <string name="c_f_result">Resultado: \n %1$s <![CDATA[°F]]>.</string>
+    <string name="f_c_result">Resultado: \n %1$s <![CDATA[°C]]>.</string>
+    <string name="clean_results">Limpiar</string>
 </resources>
