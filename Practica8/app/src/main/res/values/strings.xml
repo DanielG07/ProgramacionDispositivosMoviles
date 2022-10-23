@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Practica 8</string>
+    <string name="borrar"><![CDATA[<-]]></string>
 </resources>

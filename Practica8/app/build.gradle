@@ -7,6 +7,10 @@ android {
     namespace 'com.danielg7.practica8'
     compileSdk 32
 
+    viewBinding {
+        enabled = true
+    }
+
     defaultConfig {
         applicationId "com.danielg7.practica8"
         minSdk 28
