@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EFF5F5">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Animaciones"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="#D6E4E5"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvTraslacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Traslacion"
+        android:gravity="center"
+        android:background="#FF9800"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvRotacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Rotacion"
+        android:gravity="center"
+        android:background="#FF9800"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvTransparencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Transparencia"
+        android:gravity="center"
+        android:background="#FF9800"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvEscalamiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Escalamiento"
+        android:gravity="center"
+        android:background="#FF9800"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvSecuencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:text="Secuencia de animacion"
+        android:gravity="center"
+        android:background="#FF9800"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:layout_gravity="center"/>
+</LinearLayout>
